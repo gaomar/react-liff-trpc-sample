@@ -1,0 +1,13 @@
+node_modules/
+dist/
+public/
+
+.env.serve
+
+.eslintrc.js
+.prettierrc
+package.json
+
+.DS_Store
+
+vite.config.ts

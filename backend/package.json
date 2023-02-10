@@ -1,0 +1,34 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./types/trpc/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/local-app.ts",
+    "lint:js": "eslint --ext \".js,.ts\" --ignore-path .checkignore .",
+    "lint": "eslint",
+    "format": "prettier --write --ignore-path .checkignore .",
+    "checks": "yarn format && yarn lint:js"
+  },
+  "dependencies": {
+    "@trpc/server": "^10.0.0-rc.5",
+    "zod": "^3.20.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.110",
+    "@types/prettier": "^2.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "dotenv": "^16.0.3",
+    "esbuild": "^0.17.6",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.3",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.2",
+    "typescript": "^4.9.5",
+    "typescript-transform-paths": "^3.4.6"
+  }
+}

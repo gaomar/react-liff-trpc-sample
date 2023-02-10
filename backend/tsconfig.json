@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "noErrorTruncation": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "require": [
+      "typescript-transform-paths/register",
+      "tsconfig-paths/register"
+    ]
+  },
+  "exclude": ["./src/local-app.ts", "./dist", "./types", "./work"]
+}
