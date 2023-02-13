@@ -23,6 +23,7 @@ export default ({ mode }) => {
     },
     server: {
       port: 3000,
+      host: '172.30.1.2', // killercoda用
       proxy: {
         '^/api/*': {
           target: process.env.VITE_API_URL,
